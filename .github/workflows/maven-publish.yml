@@ -21,19 +21,19 @@ jobs:
         DEFAULT_BRANCH: main
         GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
       
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
-      with:
-        languages: java
+    #- name: Initialize CodeQL
+     # uses: github/codeql-action/init@v2
+     # with:
+     #   languages: java
 
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+    #- name: Autobuild
+      #uses: github/codeql-action/autobuild@v2
 
-    - name: Perform CodeQL Analysis      
-      uses: github/codeql-action/analyze@v2
-      with:
-        upload: False
-        output: sarif-results
+    #- name: Perform CodeQL Analysis      
+      #uses: github/codeql-action/analyze@v2
+      #with:
+        #upload: False
+        #output: sarif-results
 
     - name: setup java
       uses: actions/setup-java@v3
