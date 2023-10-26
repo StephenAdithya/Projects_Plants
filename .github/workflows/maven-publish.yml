@@ -60,5 +60,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push to DockerHub
-      run: docker push mayuratverticurl/javaprojectapp:latest
+      run: docker push stephenadithya/plantapp
         
